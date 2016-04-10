@@ -103,27 +103,6 @@ char** str_split(char* a_str, const char a_delim)
 	return result;
 }
 
-//
-//
-//void my_sleep(__in LONG dwTime)
-//{
-//	if (!hScoutMessageWindow)
-//		return Sleep(dwTime * 1000);
-//
-//	LARGE_INTEGER fTime;
-//	__int64 qwDueTime = ((dwTime * -1L)) * 10000000;
-//	fTime.LowPart = (DWORD)(qwDueTime & 0xFFFFFFFF);
-//	fTime.HighPart = (LONG)(qwDueTime >> 32);
-//
-//	if (!hMsgTimer)
-//		hMsgTimer = CreateWaitableTimer(NULL, FALSE, L"MSG_TIMER");
-//
-//	if (hMsgTimer && SetWaitableTimer(hMsgTimer, &fTime, 0, NULL, NULL, FALSE))
-//		WaitForSingleObject(hMsgTimer, INFINITE);
-//	else
-//		Sleep(dwTime * 1000);
-//}
-
 VOID CalculateSHA1(__out PBYTE pSha1Buffer, __in PBYTE pBuffer, __in ULONG uBufflen)
 {
 	SHA1Context pSha1Context;
