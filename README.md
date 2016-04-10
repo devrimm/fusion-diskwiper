@@ -5,10 +5,8 @@ Disk Wiper tool in C! with anti-vm module!
 virtualbox windows 7 x64 ultimate
 
 #run
+>rundll32 fusion.dll, core
 
-'''
-rundll32 <dllpath>, core
-'''
 
 #contact
 > Dr.R
