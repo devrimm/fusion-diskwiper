@@ -1,0 +1,3 @@
+LIBRARY
+	EXPORTS
+		core = fusion_core
